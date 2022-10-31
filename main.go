@@ -55,4 +55,25 @@ func main() {
 	val1 := 2
 	val2 := 5
 	fmt.Printf("%v \n", val1+val2)
+
+	// conditional if else statement
+	var age int = 20
+	if age >= 20 {
+		fmt.Printf(" you are an adult \n")
+	} else {
+		fmt.Printf("you are a kid")
+	}
+
+	//var fullname string
+	var fullname2 string
+	//fmt.Printf("Enter your full name  ")
+	//fmt.Scan(&fullname)
+	//fmt.Printf("fullname = %v", fullname)
+	// when you use Scan() it reads only words
+	// if your string have multiple words like "Kushal Subedi"
+	// the Scan() reads only first word and store that in the variabble and reads another word in another variable
+	fmt.Printf("Again Enter your full name ")
+	fmt.Scanf("%s", &fullname2)
+	fmt.Printf("full name =%v", fullname2)
+
 }
