@@ -1,6 +1,6 @@
 # Trying out GO ... !!! 
 
-![Golang image](./golang.png "GO").
+![Golang image](./go.png "GO").
 
 #### Hello GO ...
 ```go 
