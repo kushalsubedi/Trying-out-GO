@@ -80,18 +80,6 @@ val1 := 2
 val2 := 5
 fmt.Printf("%v \n", val1+val2)
 ```
-
-#### <u> conditional statement </u>
-
-```go 
-
-var age int = 20
-if age >= 20 {
-	fmt.Printf(" you are an adult \n")
-} else { // else should be started right where if ends
-	fmt.Printf("you are a kid")
-}
-```
 #### Scan() & Scanf()
 ```go 
 
@@ -125,7 +113,16 @@ func main(){
     input := scanner.Text()
     fmt.Println(input)
 }
+```
+#### <u> conditional statement </u>
 
+```go 
 
+var age int = 20
+if age >= 20 {
+	fmt.Printf(" you are an adult \n")
+} else { // else should be started right where if ends
+	fmt.Printf("you are a kid")
+}
 ```
 
