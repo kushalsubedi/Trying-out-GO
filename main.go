@@ -76,4 +76,22 @@ func main() {
 	fmt.Scanf("%s", &fullname2)
 	fmt.Printf("full name =%v", fullname2)
 
+	//else -if
+	var num1 int = 7
+
+	if num1 < 0 {
+		print("The number is negative")
+	} else if num1 == 0 {
+		print("number is zero")
+	} else {
+		print("number is positive")
+	}
+
+	// Arrays
+	var marks = [5]float64{20.5, 33.75, 50.0, 65.0, 75.25}
+	//or
+	marks2 := [...]int{100, 80, 90, 50}
+
+	fmt.Printf("%v", marks[0])
+	fmt.Printf("%v", marks2)
 }

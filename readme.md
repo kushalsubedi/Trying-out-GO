@@ -2,6 +2,20 @@
 
 ![Golang image](./go.png "GO")
 
+#### installation 
+[install golang](https://go.dev/)
+
+#### running go program 
+```
+$ go run <program_name.go>
+```
+#### building go program 
+```sh
+#this generates a executable compiled file 
+$ go build main.go
+```
+
+
 #### Hello GO ...
 ```go 
 package main 
@@ -37,7 +51,7 @@ fmt.Printf("hello GO %v",num1)
    variables can be declared using var keyword followed by variable name and the type of varaible
    var num1 int = 10  //int
    var name string = "kushal"  //string
-   var num2 float64=9.55  //float
+   var num2 float64=9.55  //float ieee574 standards float32 and float64 are available 
    var state bool = false  //boolean
 ```
 
@@ -125,4 +139,45 @@ if age >= 20 {
 	fmt.Printf("you are a kid")
 }
 ```
+ #### <u>if and else-if</u> 
+```go 
+	var num1 int = 7
+
+	if num1 < 0 {
+		print("The number is negative")
+	} else if num1 == 0 {
+		print("number is zero")
+	} else {
+		print("number is positive")
+	}
+```
+#### Arrays in GO 
+
+``` go
+// arrays can be created as follows
+    var marks = [5]float64{20.5, 33.75, 50.0, 65.0, 75.25}
+    //[5] -> size of array
+	//or
+	marks2 := [...]int{100, 80, 90, 50}
+    // [...] -> can holds all the elements in array without predefined size
+    // accessing elements from array
+	fmt.Printf("%v", marks[0])
+	fmt.Printf("%v", marks2)
+```
+```go 
+// multidimensional Array 
+var matrix [3][3] int = [3][3] int {1,0,0}, [3] int {1,0,1}, [3]int{0,0,1} 
+
+
+// OR 
+
+var matrix [3][3] int 
+matrix[0]= [3] int {1,2,3}
+matrix[1]= [3] int {0,1,2}
+matrix[2]= [3] int {3,0,0}
+
+
+```
+
+
 
